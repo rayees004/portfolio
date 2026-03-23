@@ -396,6 +396,44 @@ section {
     font-weight: 800;
 }
 
+.skills-container {
+    margin-top: 50px;
+    padding-top: 40px;
+    border-top: 1px solid var(--glass-border);
+}
+
+.skills-title {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill-badge {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--accent-1);
+    transition: var(--transition);
+    cursor: default;
+}
+
+.skill-badge:hover {
+    background: rgba(0, 242, 254, 0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 242, 254, 0.2);
+    border-color: var(--accent-1);
+}
+
 /* 
 =====================================
     PROJECTS SECTION
