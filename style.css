@@ -240,6 +240,7 @@ section {
     padding: 0 5%;
     position: relative;
     overflow: hidden;
+    background: rgba(10, 10, 14, 0.2);
 }
 
 .hero-content {
@@ -314,11 +315,11 @@ section {
 .profile-img-container {
     position: relative;
     z-index: 10;
-    width: 380px;
-    height: 380px;
+    width: 320px;
+    height: 320px;
     border-radius: 50%;
-    padding: 8px;
-    background: linear-gradient(135deg, var(--accent-1), var(--accent-3));
+    padding: 0px;
+    background: linear-gradient(135deg, rgba(0, 241, 254, 0.358), rgba(137, 43, 226, 0.372), rgba(0, 241, 254, 0.304));
     animation: pulse-border 3s infinite alternate;
 }
 
@@ -327,11 +328,12 @@ section {
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
-    border: 6px solid var(--bg-primary);
+    /* border: 1px dashed black; */
+    
 }
 
 @keyframes pulse-border {
-    0% { box-shadow: 0 0 20px rgba(0, 242, 254, 0.4); }
+    0% { box-shadow: linear-gradient(135deg, var(--accent-1), var(--accent-3)); }
     100% { box-shadow: 0 0 50px rgba(138, 43, 226, 0.6), 0 0 80px rgba(0, 242, 254, 0.2); }
 }
 
